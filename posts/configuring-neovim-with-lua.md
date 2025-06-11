@@ -16,10 +16,7 @@ entirely in Lua. Later releases such as
 [0.8](https://github.com/neovim/neovim/releases/tag/v0.8.0) have added even more
 nicities.
 
-{{< figure
-    src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Neovim-logo.svg"
-    title="By Jason Long, neovim, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=38131852"
->}}
+![By Jason Long, neovim, CC BY 3.0](https://upload.wikimedia.org/wikipedia/commons/4/4f/Neovim-logo.svg)
 
 Why use a fork of Vim rather than the plethora of other editors out there? I've
 given my reasons [in the previous
@@ -131,10 +128,7 @@ can be used to pass implicit `self`s to functions stored in tables (i.e.
 methods); and tables can drop square brackets and quotation marks from simple
 string keys.
 
-{{< figure
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/720px-Lua-Logo.svg.png"
-    title="By Alexandre Nakonechnyj (Graphic design) and Lua team (PostScript code) - svg from PostScript Source (see below) created from Lumu, Public Domain, https://commons.wikimedia.org/w/index.php?curid=37714918"
->}}
+![By Alexandre Nakonechnyj (Graphic design) and Lua team (PostScript code) - svg from PostScript Source (see below) created from Lumu, Public Domain](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/720px-Lua-Logo.svg.png)
 
 A few select pieces of well-targeted syntactical sugar make for a more elegant
 language than those trying to hard-code in new syntax for every desired
@@ -438,44 +432,6 @@ account](https://gitlab.com/louis.jackman/neovim-config).
 It's part of a Dockerfile, meaning you can jump straight into it with Docker
 using `docker run -it --rm -v "$PWD":/home/user/workspace
 registry.gitlab.com/louis.jackman/dockerfiles/base-dev:0.0.23`.
-
-This "screenshot" is pasted as HTML directly from my terminal emulator, so the
-UI looks more janky than it actually is. Of note are the features we'd take for
-granted in modern editors: a side view of the file tree, tabs, fuzzy finding of
-files, autocomplete of file paths, syntax colouring, and more.
-
-{{< rawhtml >}}
-<pre>▎post.md ▎.gitlab-ci.yml ▎config.toml ▎Makefile ▎README.md ▎rawhtml.html ▎       
-      <font color="#88C0D0">2</font>╭─────────────────────────── Results ────────────────────────────╮        
-      <font color="#88C0D0">2</font>│                                                                │        
-      <font color="#88C0D0">2</font>│                                                                │        
-      <font color="#88C0D0">★</font>│                                                                │        
-       │                                                                │        
-       │                                                                │<span style="background-color:#3B4252">        </span>
-  <span style="background-color:#3B4252">     </span>│  content/posts/2021/10/09/a-brief-history-of-text-editors-from-│data at 
-  <font color="#88C0D0">★ lay</font>│  content/posts/2018/11/25/your-ci-pipeline-has-the-skeleton-key│      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  <font color="#4C566A">◌ </font><font color="#88C0D0">res</font>│  content/posts/2019/01/11/lambda-syntax-in-mainstream-programmi│      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  <font color="#88C0D0">scrip</font>│  themes/hermit/exampleSite/content/posts/post-with-featured-ima│      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  <font color="#88C0D0">stati</font>│  themes/hermit/assets/scss/_normalize.scss                     │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  <font color="#88C0D0">theme</font>│  themes/hermit/assets/scss/_animate.scss                       │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  .gita│  themes/hermit/static/site.webmanifest                         │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  .giti│  themes/hermit/images/screenshot.png                           │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  .gitl│  themes/hermit/images/hermit.png                               │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  .gitm│  themes/hermit/assets/js/main.js                               │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  confi│  themes/hermit/images/tn.png                                   │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  COPYI│  static/louis-jackman-cv.pdf                                   │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  Makef│  content/posts/2018/07/29/time-attacks-why-being-efficient-can-│      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-  <span style="background-color:#88C0D0"><font color="#3B4252">READ</font></span>M│  static/louis-jackman-public-pgp-key.asc                       │      <span style="background-color:#3B4252"><font color="#5FAF5F"> </font></span> 
-<font color="#3B4252">~      </font>│<span style="background-color:#3B4252">&gt; Makefile</span>                                                      │        
-<font color="#3B4252">~      </font>╰────────────────────────────────────────────────────────────────╯names ar
-<font color="#3B4252">~      </font>╭────────────────────────── Find Files ──────────────────────────╮        
-<font color="#3B4252">~      </font>│&gt; make  <span style="background-color:#3B4252"> 2018/          </span>                                <font color="#4C566A">15 / 99 </font>│in navig
-<font color="#3B4252">~      </font>╰────────<span style="background-color:#3B4252"> 2019/          </span>────────────────────────────────────────╯        
-<font color="#3B4252">~               </font><span style="background-color:#4C566A"><font color="#88C0D0"> 2020/          </font></span>se like posts.                                   
-<span style="background-color:#444444"><font color="#EEEEEE">&lt;vimTree[-]   14</font></span><span style="background-color:#3B4252"> 2021/          </span><span style="background-color:#444444"><font color="#EEEEEE">                                           22:0  </font></span>
-:e content/posts/2020/                                                          
-</pre>
-{{< /rawhtml >}}
 
 Once Neovim is set up, it possesses all the features of a modern editor.
 It's performant, has a decent extension language, supports LSP, is immediately

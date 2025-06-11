@@ -1,4 +1,4 @@
-title: To Secure Systems of the Future, We must Rethink our Notions of \Environment\ and \Operating System\
+title: To Secure Systems of the Future, We must Rethink our Notions of "Environment" and "Operating System"
 date: 2019-02-10 12:00
 tags: operating systems, appsec, security, environments, emacs
 ---

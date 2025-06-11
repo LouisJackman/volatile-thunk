@@ -41,10 +41,7 @@ standardised keyboard shortcuts and UI fundamentals. Where is Control-C or
 Command-C for copying text? What is Vi's "insert mode" and why is it necessary?
 Why does Emacs talk about "kill rings" and "the meta key"?
 
-{{< figure
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Adm3aimage.jpg/730px-Adm3aimage.jpg"
-    title="The ADM-3A, whose keyboard inspired Vi - By Chris Jacobs - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=22231922"
->}}
+![The ADM-3A, whose keyboard inspired Vi - By Chris Jacobs - Own work, CC BY-SA 3.0](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Adm3aimage.jpg/730px-Adm3aimage.jpg)
 
 Vi and Emacs represent a fork in the road of computing evolution that other
 tools didn't take. That means both needlessly different conventions from what
@@ -98,10 +95,7 @@ unique in that regard. Later editors did provide similar capabilities: Sublime
 text allows extensions in Python, and IDEs such as Eclipse provide plugin
 systems.
 
-{{< figure
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Space-cadet.jpg/1280px-Space-cadet.jpg"
-    title="The Space-cadet keyboard that influenced the design of Emacs - By Retro-Computing Society of Rhode Island - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3388741"
->}}
+![The Space-cadet keyboard that influenced the design of Emacs - By Retro-Computing Society of Rhode Island - Own work, CC BY-SA 3.0](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Space-cadet.jpg/1280px-Space-cadet.jpg)
 
 Even with the growing popularity of such IDE plugin systems, Vim and Emacs stood
 out for the _immediacy_ of their extension languages.  Eclipse would need a
@@ -129,10 +123,7 @@ user interface with fewer performance problems. While Atom eventually addressed
 some of its biggest performance woes, the perception had already been set in
 stone; Visual Studio Code emerged as the successor of the two.
 
-{{< figure
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Atom_screenshot_v1.41.0.png/1207px-Atom_screenshot_v1.41.0.png"
-    title="Atom, a strong influence on Visual Studio Code, and populariser of Electron upon which Code is based - By GitHub - Attached with Ticket:2019102510008114, MIT, https://commons.wikimedia.org/w/index.php?curid=83383583"
->}}
+![Atom, a strong influence on Visual Studio Code, and populariser of Electron upon which Code is based - By GitHub - Attached with Ticket:2019102510008114, MIT](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Atom_screenshot_v1.41.0.png/1207px-Atom_screenshot_v1.41.0.png)
 
 Code, as Visual Studio Code is more idiomatically known, does have more
 bureaucracy for loading in custom code. It needs declared extensions rather than
@@ -305,10 +296,7 @@ including [Kakoune](https://kakoune.org/), [Helix](https://kakoune.org/), and
 it's ultimately rooted in '70s keybindings from Vi. Can technologists refine the
 modal editing paradigm for the 21st century?
 
-{{< figure
-    src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Squeak_51_morphic_interface_screenshot.png"
-    title="A Smalltalk variant showing code being modified visually rather than as lines of text - By Marcel Taeumel - https://squeak.org/, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=84240688"
->}}
+![A Smalltalk variant showing code being modified visually rather than as lines of text - By Marcel Taeumel - https://squeak.org/, CC BY 4.0](https://upload.wikimedia.org/wikipedia/commons/1/1d/Squeak_51_morphic_interface_screenshot.png)
 
 The gap between local and remote editing will blur, likely driven by the ability
 to easily run web-based technologies both locally and on a remote server. Again,

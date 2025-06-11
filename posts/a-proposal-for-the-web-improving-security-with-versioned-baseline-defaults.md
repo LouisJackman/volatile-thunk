@@ -164,38 +164,40 @@ settings if otherwise left unspecified. These can be used to relax the
 constraints of new baseline defaults. Here’s what the baseline could set the new
 default values to:
 
-|Header Name                 |Proposed New Default                |
-|----------------------------|------------------------------------|
-|`Set-Cookie`                |`SameSite=Strict; HttpOnly; Secure` |
-|`Referrer-Policy`           |`same-origin`                       |
-|`Content-Security-Policy`   |`font-src: '*'; frame-src: '*';`    |
-|                            |`media-src: '*';`                   |
-|                            |`default-src: 'self';`              |
-|                            |`sandbox allow-forms allow-scripts;`|
-|                            |`form-action: 'self'`               |
-|`Feature-Policy`            |`ambient-light-sensor 'none';`      |
-|                            |`autoplay 'none';`                  |
-|                            |`accelerometer 'none';`             |
-|                            |`camera 'none';`                    |
-|                            |`display-capture 'none';`           |
-|                            |`document-domain 'none';`           |
-|                            |`encrypted-media 'none';`           |
-|                            |`fullscreen 'none';`                |
-|                            |`geolocation 'none';`               |
-|                            |`gyroscope 'none';`                 |
-|                            |`microphone 'none';`                |
-|                            |`midi 'none';`                      |
-|                            |`payment 'none';`                   |
-|                            |`picture-in-picture 'none';`        |
-|                            |`speaker 'none';`                   |
-|                            |`sync-xhr 'none';`                  |
-|                            |`usb 'none';`                       |
-|                            |`wake-lock 'none';`                 |
-|                            |`webauthn 'none';`                  |
-|                            |`vr 'none'`                         |
-|`X-Content-Type-Options`    |`nosniff`                           |
-|`X-Frame-Options`           |`deny`                              |
-|`X-XSS-Protection`          |`1; mode=block`                     |
+```
+|Header Name            |Proposed New Default              |
+|-----------------------|----------------------------------|
+|Set-Cookie             |SameSite=Strict; HttpOnly; Secure |
+|Referrer-Policy        |same-origin                       |
+|Content-Security-Policy|font-src: '*'; frame-src: '*';    |
+|                       |media-src: '*';                   |
+|                       |default-src: 'self';              |
+|                       |sandbox allow-forms allow-scripts;|
+|                       |form-action: 'self'               |
+|Feature-Policy         |ambient-light-sensor 'none';      |
+|                       |autoplay 'none';                  |
+|                       |accelerometer 'none';             |
+|                       |camera 'none';                    |
+|                       |display-capture 'none';           |
+|                       |document-domain 'none';           |
+|                       |encrypted-media 'none';           |
+|                       |fullscreen 'none';                |
+|                       |geolocation 'none';               |
+|                       |gyroscope 'none';                 |
+|                       |microphone 'none';                |
+|                       |midi 'none';                      |
+|                       |payment 'none';                   |
+|                       |picture-in-picture 'none';        |
+|                       |speaker 'none';                   |
+|                       |sync-xhr 'none';                  |
+|                       |usb 'none';                       |
+|                       |wake-lock 'none';                 |
+|                       |webauthn 'none';                  |
+|                       |vr 'none'                         |
+|X-Content-Type-Options |nosniff                           |
+|X-Frame-Options        |deny                              |
+|X-XSS-Protection       |1; mode=block                     |
+```
 
 ## Notes on Some Headers
 
