@@ -1,0 +1,25 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+  # "When enabled, GitLab Runner uses a CI/CD job token to clone the submodules."
+  # - https://docs.gitlab.com/ee/ci/runners/configure_runners.html#git-submodule-update-flags
+  GIT_SUBMODULE_FORCE_HTTPS: 'true'
+
+build:
+  image: docker:28.2.2
+  stage: build
+  services:
+    - docker:28.2.2-dind
+  before_script:
+    - git lfs pull
+
+    # Build
+    - docker build -t site-build --load .
+    - docker run --rm -v "$PWD:/home/user/workspace" site-build .
+    - docker rmi site-build
+
+    # Publish
+    - apk add --no-cache aws-cli ca-certificates
+    - update-ca-certificates
+    - aws s3 sync 'site/' 's3://volatilethunk.com' --delete
+
