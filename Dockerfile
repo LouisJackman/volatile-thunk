@@ -3,6 +3,8 @@
 # package.
 FROM debian:trixie-20250610-slim
 
+ENV LANG=C.UTF-8
+
 RUN DEBIAN_FRONTEND=noninteractive apt-get update --yes \
     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         autoconf \
