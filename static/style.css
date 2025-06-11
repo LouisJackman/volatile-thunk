@@ -20,9 +20,10 @@ body {
     color-scheme: light dark;
     color: var(--canvas-text);
     font-family: var(--fonts);
+    padding: 5ex;
     margin-left: auto;
     margin-right: auto;
-    width: 70ex;
+    max-width: 75ex;
 }
 
 a {
@@ -86,6 +87,23 @@ main.landing-page li p {
     margin-left: 20px;
     margin-right: 30px;
     text-align: left;
+}
+
+@media (max-width: 600px) {
+
+    main.landing-page li h2 {
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    main.landing-page li p {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+        width: 100%;
+    }
 }
 
 main.landing-page li:first-child {
