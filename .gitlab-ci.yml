@@ -16,7 +16,7 @@ build:
 
     # Build
     - docker build -t site-build --load .
-    - docker run --rm -v "$PWD:/home/user/workspace" site-build .
+    - docker run --rm -v "$PWD:/home/user/workspace" site-build
     - docker rmi site-build
 
     # Publish
