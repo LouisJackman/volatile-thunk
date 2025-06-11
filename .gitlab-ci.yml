@@ -10,7 +10,7 @@ build:
   stage: build
   services:
     - docker:28.2.2-dind
-  before_script:
+  script:
     - git lfs pull
 
     # Build
