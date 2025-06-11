@@ -1,0 +1,4 @@
+Contact: https://volatilethunk.com/pages/contact.html
+Preferred-Languages: en
+Canonical: https://volatilethunk.com/.well-known/security.txt
+Encryption: https://volatilethunk.com/louis-jackman-public-pgp-key.asc
