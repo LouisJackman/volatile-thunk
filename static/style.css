@@ -4,12 +4,14 @@
 
     --canvas: rgb(255, 255, 255);
     --canvas-text: rgb(27, 27, 27);
+    --secondary-canvas-text: rgb(100, 100, 100);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --canvas: black;
         --canvas-text: rgb(210, 210, 210);
+        --secondary-canvas-text: rgb(140, 140, 140);
     }
 }
 
@@ -33,7 +35,7 @@ pre tt {
     font-family: var(--code-fonts);
 }
 
-header {
+body > header {
     text-align: center;
 }
 
@@ -42,13 +44,18 @@ main h1 {
     margin-bottom: 5px;
 }
 
+header aside p {
+    margin-top: 5px;
+}
+
 main.landing-page {
     margin-top: auto;
     margin-bottom: auto;
 }
 
 main.landing-page ul,
-header nav ul {
+header nav ul,
+main ul.articles {
     list-style: none;
 }
 
@@ -102,6 +109,72 @@ header nav li:not(:last-child) {
     margin-right: 20px;
 }
 
-main {
-    line-height: 25px;
+header nav h2 {
+    display: inline;
+    font-size: medium;
 }
+
+main {
+    line-height: 27px;
+}
+
+main .articles time,
+article header time,
+article header .tags {
+    color: var(--secondary-canvas-text);
+}
+
+article header .tags {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+article header .tags li {
+    display: inline;
+}
+
+article header .tags li:first-child {
+    margin-left: 5px;
+}
+
+article header .tags li:not(:last-child)::after {
+    content: ", ";
+}
+
+article header + p {
+    margin-top: 25px;
+}
+
+main .articles,
+main article header,
+main > p {
+    padding-top: 25px;
+}
+
+main .articles li time {
+    display: block;
+}
+
+main article h2 {
+    margin-bottom: 0;
+}
+
+main .articles h2 {
+    font-size: medium;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+pre {
+    border: 1px solid var(--secondary-canvas-text);
+    padding: 15px;
+    overflow: scroll;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
