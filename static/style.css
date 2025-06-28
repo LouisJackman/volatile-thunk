@@ -104,6 +104,10 @@ main.landing-page li p {
         margin-top: 5px;
         width: 100%;
     }
+
+    main .articles {
+        padding-left: 0;
+    }
 }
 
 main.landing-page li:first-child {
