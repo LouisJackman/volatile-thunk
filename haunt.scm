@@ -259,7 +259,7 @@
 
       #:default-metadata
       '((author . "Louis Jackman")
-        (email  . "ljackman@protonmail.com"))
+        (email  . "ljackman@pm.me"))
 
       #:readers (list commonmark-reader)
 

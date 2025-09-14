@@ -16,7 +16,7 @@ Contact me via:
   * Take my full surname.
   * Combine them, surname last.
   * Lowercase them.
-  * Put `@protonmail.com` at the end.
+  * Put `@pm.me` at the end.
 * [Matrix on `matrix.org`](https://app.element.io/#/welcome), user
   `@ljackman:matrix.org`. Try the [Element](https://element.io/) client if you
   haven't used Matrix before.
