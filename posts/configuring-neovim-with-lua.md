@@ -1,6 +1,5 @@
 title: Using Neovim and Configuring it with Lua
 date: 2021-10-10 12:00
-draft: false
 tags: vim, neovim, lua, editor, editors
 ---
 Neovim is a fork of Vim created in 2015. It strove to split the text editing
