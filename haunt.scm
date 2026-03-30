@@ -11,7 +11,7 @@
 ;;;; levels.
 ;;;;
 
-(use-modules (srfi srfi-19)  ; Strings
+(use-modules (srfi srfi-13)  ; Strings
              (srfi srfi-19)  ; Dates/Times
 
              (haunt artifact)
@@ -272,8 +272,11 @@
                        (flat-pages "pages"
                                    #:template (theme-layout (volatile-thunk-theme))
                                    #:prefix (string-append pages-prefix "/"))
-                       (atom-feed #:blog-prefix posts-prefix)
-                       (atom-feeds-by-tag #:blog-prefix posts-prefix)
-                       (rss-feed #:file-name rss-path)
+                       (atom-feed #:blog-prefix posts-prefix
+                                  #:max-entries 20)
+                       (atom-feeds-by-tag #:blog-prefix posts-prefix
+                                          #:max-entries 20)
+                       (rss-feed #:file-name rss-path
+                                 #:max-entries 20)
                        (static-directory static-source-path static-dest-path)
                        (redirects volatile-thunk-redirects)))
