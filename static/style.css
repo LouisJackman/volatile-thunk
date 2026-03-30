@@ -74,8 +74,6 @@ main.landing-page li {
     font-size: small;
 }
 
-main.landing-page li > * {
-}
 
 main.landing-page li h2 {
     text-align: right;
@@ -191,7 +189,7 @@ main .articles h2 {
 pre {
     border: 1px solid var(--secondary-canvas-text);
     padding: 15px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 img {
