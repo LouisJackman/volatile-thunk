@@ -1,15 +1,15 @@
-# AI Agents Instruction
+# volatile-thunk - AI Coding Agent Instructions
 
-Canonical instructions for all AI coding assistants. Tool-specific files are symlinks to this file:
-- `CLAUDE.md` → `AGENTS.md`
-- `.cursorrules` → `AGENTS.md`
-- `.github/copilot-instructions.md` → `AGENTS.md`
+Canonical instructions for AI coding agents working in this repository. Tool-specific entrypoints symlink to this file where supported:
+- `CLAUDE.md`
+- `.cursorrules`
+- `.github/copilot-instructions.md`
 
 ## Project Overview
 
 Personal website/blog at https://volatilethunk.com, built with [Haunt](https://dthompson.us/projects/haunt.html) 0.3.0, a functional static site generator written in GNU Guile (Scheme). Licensed under GNU AGPL v3.
 
-## Build
+## Build and Run
 
 All builds run inside Docker — no local Guile/Haunt installation required.
 
